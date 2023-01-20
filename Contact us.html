@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <Head>
+    <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Title>Home</Title>
-    </Head>
+    </head>
     <body>
-        <header>
-           <p id="text" ><img src="image/tour et.png" alt="logo"></p>
-       
-        
-        <div class="head">
-            
-            
-            <input type="text" placeholder="Search">
-        <ul>
-            <li><span id="Home"><a href="Home page.html">Home</a></span></li>
-            <li><span id="Contact"><a href="Contact us.html">Contact</a></span></li>
-            <li><span id="About Page"><a href="About us.html">About Page</a></span></li>
-        </ul>
+      <header>
+        <div class="top">
+
+        <div class="Logo">
+          <img src="image/tour et.png" alt="Logo">
+        </div>  
+      <div class="head">
+        <nav class="main-nav">
+          
+          
+          <div class="Search-Container"><input class="Search"
+            type="text" onkeyup="search_items()" 
+            name="search" placeholder="Search..."> </div>
+      <ul>
+          <li><span class="Home"><a href="Home page.html">Home</a></span></li>
+          <li><span class="Contact"><a href="Contact us.html">Contact</a></span></li>
+          <li><span class="About Page"><a href="About us.html">About Page</a></span></li>
+      </ul>
+      
+        </nav>
+      </div>
+      
+  </div>
+           </header>
+    <div class="contact">
+    <div class="forms">
+      
+      <form name="Submit"  action="Home page.html" onsubmit="return Submit()" >
+   <p> Full Name  </p> <input id="Name" type="text" placeholder="Enter Here..." required>
+
+    <p>Email </p> <input id="Email"type="text" placeholder="Enter Here..." required>
     
+    <p>Feedback</p>  <textarea id="Feedback" name="Comments" cols=30 rows=4 placeholder="Enter Here..." required ></textarea> 
     
-        </div>
-    </header><hr>
-    
-    Full Name   <input type="text"><br>
-<br>
-<br>
-    Email  <input type="text"><br>
-    <br>
-    <br>
-    Feedback  <textarea name="Comments" cols=30 rows=4></textarea> </br> </br>
-    
-    <button type="button"><a href="submit">Submit</a></button>
+    <input type="Submit" onclick="Submit" value="Submit"><a href="Home page.html"></a></button>
+      </form>
+  </div>
+
+</div>
     <hr><footer>
         <table>
             <tr>
@@ -42,6 +54,7 @@
             </tr>
             
     </footer>
-
+    <link rel="stylesheet" href="whole.css">
+<script src="whole.jss"></script>
 </body>
     </html>

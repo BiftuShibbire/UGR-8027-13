@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <Title>Home</Title>
-    </Head>
+        <title>Home</title>
+    </head>
     <body>
         <header>
+          <div class="top">
 
-            <img src="image/tour et.png">
+          <div class="Logo">
+            <img src="image/tour et.png" alt="Logo">
+          </div>  
         <div class="head">
+          <nav class="main-nav">
             
             
-            <p><input type="text" placeholder="Search"></p>
+            <div class="Search-Container"><input class="Search"
+              type="text" onkeyup="search_items()" 
+              name="search" placeholder="Search..."> </div>
         <ul>
-            <li><span id="Home"><a href="Home page.html">Home</a></span></li>
-            <li><span id="Contact"><a href="Contact us.html">Contact</a></span></li>
-            <li><span id="About Page"><a href="About us.html">About Page</a></span></li>
+            <li><span class="Home"><a href="Home page.html">Home</a></span></li>
+            <li><span class="Contact"><a href="Contact us.html">Contact</a></span></li>
+            <li><span class="About Page"><a href="About us.html">About Page</a></span></li>
         </ul>
-             </header><hr>
+        
+          </nav>
+        </div>
+        
+    </div>
+             </header>
     
        
-    </div>
-    <p>Tour Ethiopia Experience variety Admire Nature and Beauty</p>
+    <p class="Moto">Tour Ethiopia Experience variety Admire Nature and Beauty</p>
 
     <div class="row">
         <div class="column">
@@ -33,13 +44,13 @@
         </div>
         
       
-        </div>
+        
         <div class="column">
-            <image/img class="historical" src="image/Historical.jfif" alt="Historical Places"><br>
+            <image/img class="historicall" src="image/Historical.jfif" alt="Historical Places"><br>
             <button type="button"><a href="Historical places.html">Historical Places</a></button>
           </div>
           
-          </div>
+          
 
           <div class="column">
             <image/img class="Natural" src="image/Natural.jfif" alt="Natural Resources"><br>
@@ -49,23 +60,31 @@
                 <img class="Museums" src="image/Museum.jfif" alt="Museums" ><br>
                 <button type="button"><a href="Museums.html">Museums</a></button>
             </div>
-          </div>
+            <div class="access"></div>
+          
+</div>
           <audio controls>
             <source src="Home page (1).ogg" type="audio/ogg">
             <source src="Audio/Home page (1).mp3" type="audio/mpeg">
           
           </audio>
 
-          <hr><footer>
+          <footer>
             <table>
                 <tr>
                   <th><a href="About us.html">Twitter</a></th>
                   <th><a href="About us.html">Facebook</a></th>
-                  <th><a href="About us.html">Linkedin</th>
+                  <th><a href="About us.html">Linkedin</a></th>
                 </tr>
                 
         </footer>
+        <link rel="stylesheet" href="whole.css">
+        <script src="whole.js"></script>
+    
+     
+
     
 
     </body>
-</html>
+    
+</html> 
