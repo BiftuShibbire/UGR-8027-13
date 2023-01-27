@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+    <head>
+      
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Natural Resources</title>
-        <header>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <title>Natural resources</title>
+    </head>
+    
+      <div class="Logo ">
+        <a class="navbar-brand float-start ms-3 " >
+        <img src="image/tour et.png" class="img-fluid"  alt="Logo" width="80" height="80" max-width="100%"
+        >
+        
+      
+      <div class="text-black bg-gradient ">
+        <header class="bg-secondary  text-dark">
           <div class="top">
 
-          <div class="Logo">
-            <img src="image/tour et.png" alt="Logo">
+         
+          </a>
           </div>  
         <div class="head">
-          <nav class="main-nav">
-            
-            
-            <div class="Search-Container"><input class="Search"
-              type="text" onkeyup="search_items()" 
-              name="search" placeholder="Search..."> </div>
-        <ul>
-            <li><span class="Home"><a href="Home page.html">Home</a></span></li>
-            <li><span class="Contact"><a href="Contact us.html">Contact</a></span></li>
-            <li><span class="About Page"><a href="About us.html">About Page</a></span></li>
+          <div class="container">
+          <nav class="main-nav navbar-extend-lg navbar-secondary text-dark ">
+            <div class="container">
+      
+            <div class="Search-Container mb-3 pt-3">
+              <input class=" justify-content-end ms-3  Search" type="text" onkeyup="search_items()" name="search" placeholder="Search...">
+              </div>
+        <ul class="main-nav nav ms-auto mb-4 mb-lg-0 pb-10 justify-content-end  ">
+            <li class="nav-item"><span class="Home"><a class="nav-link text-dark " href="Home page.html"  >Home</a></span></li>
+            <li class="nav-item"><span class="Contact"><a class="nav-link text-dark" href="Contact us.html">Contact</a></span></li>
+            <li class="nav-item"><span class="About Page"><a class="nav-link text-dark" href="About us.html">About Page</a></span></li>
         </ul>
         
           </nav>
         </div>
         
     </div>
+  </div>
              </header>
       
          
       </div>
+      <body class="bg-secondary bg-gradient">
       <div class="gridResource">
 <div class=" sliderResource">
   <div class="left">
@@ -38,17 +53,21 @@
 
         <figure>
    
-    <img src="image/dallool.jfif" alt="Dallool ">
-    <img src ="image/Sof omar (1).jpg" alt="Sof Omer Cave">
-    <img src="image/rift-valley (1).png" alt="Great Rift Valley">
-    <img src="image/blue-nile-falls (1).jpg" alt="Blue Nile">
-    <img src="image/Ras dashen (2).jpg" alt="mount ras dashen">
-        </figure>
+    <img class="fluid float-start ms-3" src="image/dallool.jfif" alt="Dallool ">
+    <img class="fluid float-start ms-3" src="image/Sof omar (1).jpg" alt="Dallool ">
+    <img class="fluid float-start ms-3" src="image/rift-valley (1).png" alt="Dallool ">
+    <img class="fluid float-start ms-3" src="image/blue-nile-falls (1).jpg" alt="Dallool ">
+    <img class="fluid float-start ms-3" src="image/Ras dashen (2).jpg" alt="Dallool ">
+      </figure>
+ 
       </div>
 </div>
-<div class="right">
-<div class="contents">
-  
+</div>
+
+
+<div class="text-start ms-3">
+  <div class="justify-content-end  contents text-align-right">
+  <div class="text-start ms-3"></div>
     <h3>Natural Resources</h3>
     <p> Ethiopia has 12 river basins, land of rugged mountains,  broad savannah,amazing caves Lakes and Rivers.</p>
 
@@ -63,6 +82,8 @@
       <p>Blue Nile - locally known as Abbay, is the major tributory of the great Nile river - the 
         longest river in the world.It travels for approximately 1,450 km (900 mi) through Ethiopia and Sudan.  </p> 
         <p>Ras Dashen also known as Ras Dejen, is the highest mountain in Ethiopia and fourteenth highest peak in Africa.</p>
+    </div>
+</div>
         <audio controls>
             <source src="Natural resource.ogg" type="audio/ogg">
             <source src="audio/Natural resource.mp3" type="audio/mpeg">
@@ -72,14 +93,23 @@
         </div>
 </div>
 </body>
-<hr><footer>
+<div class="footer mt-5 mb-5 ">
+  <footer class="text-start ps-5 bg-secondary mt-10 " >
     <table>
-        <tr>
-          <th><a href="About us.html">Twitter</a></th>
-          <th><a href="About us.html">Facebook</a></th>
-          <th><a href="About us.html">Linkedin</a></th>
+        <tr class="text-start ms-5 ps-5 text-decoration-none">
+          <th><a class="link text-dark me-3 text-decoration-none" href="About us.html">Twitter</a></th>
+          <th><a class="link text-dark me-3 text-decoration-none" href="About us.html">Facebook</a></th>
+          <th><a class="link text-dark me-3  mb-10 text-decoration-none" href="About us.html">Linkedin</a></th>
         </tr>
-        <link rel="stylesheet" href="whole.css">
+        
 </footer>
+<!--I use this css slide 
+code since it is  difficult to 
+make my slideshow images with partial 
+screen(left) of to have slide.There is
+bootstrap slide property which also uses
+css but i found it that it works for full screen image slides-->
+<link rel="stylesheet" href="bootsrap.css">
+</div>
  
 </html>
