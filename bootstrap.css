@@ -1,0 +1,87 @@
+/*I use this css slide 
+code since it is  difficult to 
+make my slideshow images with partial 
+screen(left) of to have slide.There is
+bootstrap slide property which also uses
+css but i found it that it works for full screen image slides*/ 
+
+.sliderResource{
+ 
+    overflow: hidden;  
+    width: 320px;
+    height: 320px;
+    border-radius: 5px;
+   
+    position: relative;
+    
+  
+    top:0px;
+    left: 5px;
+  }
+  .gridResource{
+  
+    width:100%;
+  position: relative;
+  padding-left: 40px;
+  
+   }
+
+   .gridResource .left{
+    
+    max-width: 100%;
+    height: auto;
+    float: right;
+    position: relative;
+  
+   }
+   
+   .sliderResource figure{
+      width: 500%;
+      height:320px;
+      display: flex ;
+      margin: 0px;
+      position: relative;
+      right: 312px;
+      animation: 10s slider infinite;   
+    
+  }
+  .sliderResource figure img{
+      width: 100%;
+      width:300px ;
+      height: 320px;
+      height: auto;
+  }
+  
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    25%{
+        left: 0;
+    }
+    30%{
+        left: -100%;
+    }
+    50%{
+        left: -100%;
+ 
+    }
+    55%{
+        left: -200%;
+ 
+    }
+    75%{
+        left:-200% ;
+    }
+    80%{
+        left:-300% ;
+ 
+    }
+    90%{
+       left:-300% ; 
+    }
+    100%{
+        left:-400% ;
+ 
+    }
+}
